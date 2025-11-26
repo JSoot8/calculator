@@ -21,5 +21,3 @@ const operate = (a, b, operator) => {
 let num1;
 let num2;
 let operator;
-
-

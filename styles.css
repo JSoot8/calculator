@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #2B2A33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    padding: 16px;
+    height: 400px;
+}
+
+.input-board {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    font-size: 16px;
+    flex: 1;
+}
+
+#equals {
+    background-color: lightskyblue;
+}
+
+.digit {
+    background-color: lightgray;
+}
+
+.operator {
+    background-color: gray;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    width: 400px;
+    flex: 1;
+}
