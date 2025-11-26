@@ -5,20 +5,16 @@ const divide = (a, b) => a / b;
 const operate = (a, b, operator) => {
     switch(operator) {
         case '+':
-            sum(a, b);
-            break;
+            return sum(a, b);
         
         case '-':
-            subtract(a, b);
-            break;
+            return subtract(a, b);
 
         case '*':
-            multiply(a, b);
-            break;
+            return multiply(a, b);
 
         case '/':
-            divide(a, b);
-            break;
+            return divide(a, b);
     }
 };
 
