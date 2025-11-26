@@ -14,18 +14,36 @@ body {
 
 .calculator {
     padding: 16px;
-    height: 400px;
-}
-
-.input-board {
-    background-color: red;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+}
+
+.output-area {
+    padding: 16px;
+    height: 100px;
+    background-color:gray;
+    border-radius: 16px;
+    border: lightgray solid 4px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4px;
 }
 
 .btn {
-    font-size: 16px;
+    padding: 8px 16px;
+    font-size: 24px;
     flex: 1;
+    border-radius: 16px;
 }
 
 #equals {
@@ -43,6 +61,16 @@ body {
 
 .row {
     display: flex;
-    width: 400px;
     flex: 1;
+    gap: 4px;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+#clear-btn {
+    height: 100%;
+    margin-left: auto;
+    flex: 0 1 25%;
 }
