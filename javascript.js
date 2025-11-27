@@ -33,6 +33,9 @@ const display = document.querySelector('.output-area');
 const updateDisplay = (text => display.firstElementChild.textContent = text);
 
 btns.addEventListener('click', (event) => {
+    if(!event.target.classList.contains('btn')){
+        return;
+    }
     const clickedContent = event.target.textContent;
     if(clickedContent === 'AC'){
         num1 = '';
