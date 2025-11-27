@@ -30,6 +30,7 @@ const mathOperatorArr = ['+', '-', 'x', '÷'];
 
 const btns = document.querySelector('.input-area');
 const display = document.querySelector('.output-area');
+const updateDisplay = (text => display.firstElementChild.textContent = text);
 
 btns.addEventListener('click', (event) => {
     const clickedContent = event.target.textContent;
@@ -76,6 +77,6 @@ btns.addEventListener('click', (event) => {
         display.firstElementChild.textContent = 'STOP THIS NONSENSE'
     }
     else {
-        display.firstElementChild.textContent = `${num1} ${operator} ${num2}`;
+        updateDisplay(`${num1} ${operator} ${num2}`);
     }
 }); 
