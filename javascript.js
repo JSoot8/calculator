@@ -56,6 +56,7 @@ btns.addEventListener('click', (event) => {
         if(operatorUsed === true && num2 !== ''){
             num1 = operate(num1, num2, operator);
             num2 = '';
+            newCalc = false;
         }
         operator = clickedContent;
         operatorUsed = true;
@@ -74,7 +75,7 @@ btns.addEventListener('click', (event) => {
         }
     }
     if(num1 === Infinity){
-        display.firstElementChild.textContent = 'STOP THIS NONSENSE'
+        updateDisplay('STOP THIS NONSENSE');
     }
     else {
         updateDisplay(`${num1} ${operator} ${num2}`);
